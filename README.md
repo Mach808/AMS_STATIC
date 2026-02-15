@@ -20,7 +20,7 @@ This project is currently in the **testing phase** and is planned for future imp
 The Android APK can be downloaded and installed from the project website:
 
 👉 **Static Website:**  
-https://mach808.github.io/AMS_STATIC/
+https://ams-static.vercel.app/
 
 > The source repository of the AMS mobile application is private due to privacy and institutional data protection concerns and therefore cannot be publicly shared.  
 > However, the working application can be installed using the above website.
