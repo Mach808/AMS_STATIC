@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="image/svg+xml" href="/sdc_logo.svg" />
+    <title>AMS - Attendance Management System</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(180deg, #020617, #0f172a);
+            color: #e2e8f0;
+        }
+
+        /* CENTER CONTAINER */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(14px);
+            background: rgba(2, 6, 23, 0.7);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #38bdf8;
+        }
+
+        .logo img {
+            height: 34px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #cbd5f5;
+            margin-left: 25px;
+            transition: .25s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* HERO */
+        .hero {
+            padding: 90px 0 70px;
+        }
+
+        .hero-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            font-weight: 700;
+            background: linear-gradient(90deg, #38bdf8, #818cf8, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-text p {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #94a3b8;
+            line-height: 1.7;
+        }
+
+        .download-btn {
+            display: inline-block;
+            margin-top: 35px;
+            background: linear-gradient(135deg, #38bdf8, #6366f1);
+            padding: 16px 34px;
+            border-radius: 12px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: .25s;
+            box-shadow: 0 10px 30px rgba(99, 102, 241, .45);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 18px 40px rgba(99, 102, 241, .7);
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero-img img {
+            width: 260px;
+            border-radius: 18px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, .6);
+        }
+
+        /* FEATURES */
+        .features {
+            padding: 80px 0;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 38px;
+            margin-bottom: 50px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 26px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, .05);
+            transition: .25s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            background: #22345c;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #cbd5f5;
+            line-height: 1.6;
+        }
+
+        /* INSTALL */
+        .steps {
+            padding: 80px 0;
+            background: #020617;
+        }
+
+        .steps h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .step {
+            margin: 12px auto;
+            max-width: 650px;
+            background: #1e293b;
+            padding: 16px 20px;
+            border-radius: 12px;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 35px 0;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, .05);
+            color: #64748b;
+        }
+
+        footer img {
+            margin-top: 15px;
+            height: 45px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+        <div class="container nav-inner">
+            <div class="logo">
+                <img src="images/sdc_icon.jpg" alt="SDC Logo">
+                AMS
+            </div>
+            <div>
+                <a href="#features">Features</a>
+                <a href="#install">Install</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="hero">
+        <div class="container hero-inner">
+
+            ```
+            <div class="hero-text">
+                <h1>Attendance Management System</h1>
+                <p>
+                    A smart classroom attendance solution designed for teachers.
+                    Capture classroom photos, automatically generate attendance records,
+                    and manage lectures directly from your phone.
+                </p>
+
+                <a class="download-btn" href="app-release.apk" download>
+                    Download Android App
+                </a>
+            </div>
+
+            <div class="hero-img">
+                <img src="images/icon.png" alt="AMS App Screenshot">
+            </div>
+            ```
+
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+
+            ```
+            <div class="grid">
+
+                <div class="card">
+                    <h3>📸 Photo Attendance</h3>
+                    <p>Capture classroom photos and automatically detect and record attendance securely.</p>
+                </div>
+
+                <div class="card">
+                    <h3>📅 Smart Schedule</h3>
+                    <p>Instantly view current lectures, upcoming classes, and daily timetable.</p>
+                </div>
+
+                <div class="card">
+                    <h3>📊 Excel Reports</h3>
+                    <p>Generate and download attendance sheets automatically in Excel format.</p>
+                </div>
+
+                <div class="card">
+                    <h3>⚡ Fast & Simple</h3>
+                    <p>Optimized workflow so teachers can mark attendance within seconds.</p>
+                </div>
+
+            </div>
+            ```
+
+        </div>
+    </section>
+
+    <!-- INSTALL -->
+
+    <section id="install" class="steps">
+        <div class="container">
+            <h2>How to Install</h2>
+
+            ```
+            <div class="step">1. Click the "Download Android App" button</div>
+            <div class="step">2. Allow installation from unknown sources</div>
+            <div class="step">3. Install the APK file</div>
+            <div class="step">4. Login using your college credentials</div>
+            ```
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Attendance Management System • Manipal University Jaipur
+        <br>
+        <img src="images/sdc_icon.jpg" alt="SDC">
+    </footer>
+
+</body>
+
+</html>
