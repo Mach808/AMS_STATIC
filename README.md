@@ -1,4 +1,4 @@
-# 📘 AMS — Attendance Management System
+# 📘 AMS — Attendance Monitering System
 
 A mobile-based smart attendance solution designed for classrooms at **Manipal University Jaipur**.
 
